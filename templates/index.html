@@ -14,7 +14,7 @@
         <h2>{{ el.animal_type }}</h2>
         <p>{{ el.processed_image }}</p>
         <p><b>Дата: {{ el.date.date() }}</b></p>
-        <a href="history/{{ el.processed_image }}" class="btn btn-warning">Посмотреть картинку</a>
+        <a href="history/static/{{ el.processed_image }}" class="btn btn-warning">Посмотреть картинку</a>
     </div>   
     {% endfor %}
 </div>

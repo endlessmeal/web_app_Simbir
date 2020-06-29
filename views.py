@@ -72,7 +72,7 @@ def history():
     return render_template('index.html', animals=animals)
 
 
-@app.route('/history/<string:processed_image>')
+@app.route('/history/static/<string:processed_image>')
 def post(processed_image):
     # getting an image src
     img_src = app_dir + '/static/animals/' + processed_image + '.jpg'
