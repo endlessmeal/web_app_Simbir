@@ -28,8 +28,8 @@ def process_image(img, img_src):
         # add blur filter
         blur = original.filter(ImageFilter.BLUR)
         blur.save(img_src)
-    except IOError as io_err:
-        print(f'При обработке файла произошла ошибка: {io_err}')
+    except ValueError as va_err:
+        make_response(f'При обработке файла произошла ошибка: {va_err}')
 
 
 def insert_data_in_db(image):
