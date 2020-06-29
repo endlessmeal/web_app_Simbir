@@ -12,6 +12,7 @@ What things you need to install the software and how to install them
 ```
 pip3 install Flask
 pip3 install flask-sqlalchemy
+pip3 install Pillow
 ```
 
 ### Launching
